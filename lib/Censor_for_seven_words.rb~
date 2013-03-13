@@ -1,0 +1,6 @@
+require "Censor_for_seven_words/version"
+require "Censor_for_seven_words/words.rb"
+
+module CensorForSevenWords
+  # Your code goes here...
+end
