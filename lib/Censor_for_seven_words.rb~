@@ -2,5 +2,37 @@ require "Censor_for_seven_words/version"
 require "Censor_for_seven_words/words.rb"
 
 module CensorForSevenWords
-  # Your code goes here...
+  
+
+  @@censor_words = [
+    { 'fuck' => 'Personal',
+      'shit' => 'Business',
+      'piss' => 'Slave',
+      ' cunt' => 'Master',
+      ' ass' => 'Father',
+      'bitch' => 'Mother',
+      'tits'  => 'AM'}
+
+  ]
+
+  def censor_words
+    sentence=self.split('-')
+    censor_words= @@censor_words.dup
+    sentence=sentence.downcase
+    censored_sentence = censor_words do |w|
+      sentence.shift[w]
+    end
+    signif.join( ' ' )
+  end
+
+# def censorship(sentences)
+ # while sentence.include? 'shit'
+  #  open = sentence.index( 'shit' )
+   # close = open+4
+    #sentence[open..close] = 'f*ck'
+#  end
+#end
+
+
+
 end
