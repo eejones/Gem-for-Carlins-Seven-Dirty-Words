@@ -1,0 +1,20 @@
+#Censor_for_seven_words/lib/censor_for_seven_words.rb
+
+require "censor_for_seven_words/core_ext"
+
+module CensorForSevenWords
+
+ class Dictionarytime
+  @@censored_words = [
+    { 'fuck' => 'f*ck',
+      'shit' => 'sh*t',
+      'piss' => 'P*ss',
+      ' cunt' => 'c*nt',
+      ' ass' => 'a**',
+      'bitch' => 'b*tch',
+      'tits'  => 't*ts'}
+
+  ]
+ end
+
+end
