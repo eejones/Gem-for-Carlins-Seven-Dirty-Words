@@ -7,11 +7,11 @@ require "sevenwords/version"
 Gem::Specification.new do |s|
   s.name        = "Censor_for_seven_words"
   s.version     = Censor_for_seven_words::VERSION
-  s.authors     = ["TODO: Eric Jones"]
-  s.email       = ["TODO: joneserice@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Censor_for_seven_words."
-  s.description = "TODO: Description of Censor_for_seven_words."
+  s.authors     = ["Eric Jones"]
+  s.email       = ["joneserice@gmail.com"]
+  s.homepage    = ""
+  s.summary     = "Summary of Censor_for_seven_words."
+  s.description = "Description of Censor_for_seven_words."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
