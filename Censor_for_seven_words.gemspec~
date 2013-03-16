@@ -1,19 +1,22 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'Censor_for_seven_words/version'
+$:.push File.expand_path("../lib", __FILE__)
 
-Gem::Specification.new do |gem|
-  gem.name          = "Censor_for_seven_words"
-  gem.version       = CensorForSevenWords::VERSION
-  gem.authors       = ["Eric Jones"]
-  gem.email         = ["joneserice@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
-  gem.add_development_dependency "rspec", "2.6"
-  gem.files         = `git ls-files`.split($/)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.require_paths = ["lib"]
+# Maintain your gem's version:
+require "sevenwords/version"
+
+# Describe your gem and declare its dependencies:
+Gem::Specification.new do |s|
+  s.name        = "Censor_for_seven_words"
+  s.version     = Censor_for_seven_words::VERSION
+  s.authors     = ["TODO: Eric Jones"]
+  s.email       = ["TODO: joneserice@gmail.com"]
+  s.homepage    = "TODO"
+  s.summary     = "TODO: Summary of Censor_for_seven_words."
+  s.description = "TODO: Description of Censor_for_seven_words."
+
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
+
+  s.add_dependency "rails", "~> 3.2.12"
+
+  s.add_development_dependency "sqlite3"
 end
