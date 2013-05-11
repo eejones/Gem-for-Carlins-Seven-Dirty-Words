@@ -20,15 +20,11 @@ String.class_eval do
         wordindexc=wordindexo+w.length-1
         lowercase[wordindexo..wordindexc]=censored_words[w]
 
-  #    censored_words.shift[w]
     end
     end
     lowercase
-#    censored_sentence.join(' ')
+
   end
 
-# def censor_words
-#   "idiot! #{self}".strip
-# end
 
 end
