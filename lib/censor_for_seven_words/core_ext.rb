@@ -19,11 +19,9 @@ String.class_eval do
         wordindexo=lowercase.index(w)
         wordindexc=wordindexo+w.length-1
         lowercase[wordindexo..wordindexc]=censored_words[w]
-
       end
     end
     lowercase
-
   end
 
 
